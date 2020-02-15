@@ -1,5 +1,7 @@
 package shuaifu
 
+import "fmt"
+
 var firstLetter = map[rune]string{
 	'b': "b", 'c': "c", 'd': "d", 'f': "f", 'g': "g", 'h': "h", 'i': "ch", 'j': "j", 'k': "k", 'l': "l",
 	'm': "m", 'n': "n", 'p': "p", 'q': "q", 'r': "r", 's': "s", 't': "t",
@@ -33,6 +35,14 @@ func hasStr(arr []string, needle string) bool {
 		}
 	}
 	return false
+}
+
+func Believe() {
+	fmt.Println("我信仰帅副!")
+}
+
+func Version() string {
+	return "0.1.0"
 }
 
 func Translate(text string, opt ...bool) string {
