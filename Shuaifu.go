@@ -37,14 +37,17 @@ func hasStr(arr []string, needle string) bool {
 	return false
 }
 
+// Believe show faith in Shuaifu
 func Believe() {
 	fmt.Println("我信仰帅副!")
 }
 
+// Version returns version of Shuaifu
 func Version() string {
 	return "0.1.0"
 }
 
+// Translate to Shuaifu Language
 func Translate(text string, opt ...bool) string {
 	var result = ""
 	var tmp = []rune(text)
